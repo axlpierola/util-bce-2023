@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: background 1s ease-in-out;
+}
+
+#app {
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+.dark-side {
+    background: url('dark-side.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(21, 0, 79);
+}
+
+.light-side {
+    background: url('light-side.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(210, 221, 0);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}

@@ -6,7 +6,7 @@ import datetime
 from flask import Flask, jsonify
 
 # Especificar la región de AWS
-AWS_REGION = 'us-west-2'  # Cambia esto a la región donde tienes tus recursos
+AWS_REGION = 'us-east-1'  # Cambia esto a la región donde tienes tus recursos
 
 app = Flask(__name__)
 

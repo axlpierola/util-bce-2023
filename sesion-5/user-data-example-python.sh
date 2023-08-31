@@ -14,7 +14,7 @@ git clone https://github.com/tu_usuario_de_github/my_aws_app.git
 cd my_aws_app
 
 # Establecer variables de entorno (puedes ponerlas en un archivo .env o exportarlas aquí)
-export SECRET_ID='MyRDSInstanceSecret'
+export SECRET_ID='arnSecret'
 export DB_NAME_PARAM='MyDBName'
 export DB_ENDPOINT_PARAM='MyDBEndpoint'
 

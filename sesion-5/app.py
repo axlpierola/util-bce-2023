@@ -5,14 +5,17 @@ import json
 import datetime
 from flask import Flask, jsonify
 
+# Especificar la región de AWS
+AWS_REGION = 'us-west-2'  # Cambia esto a la región donde tienes tus recursos
+
 app = Flask(__name__)
 
 @app.route('/')
 def insert_timestamp():
     try:
-        # Inicializar los clientes de Secrets Manager y Parameter Store
-        secrets_client = boto3.client('secretsmanager')
-        ssm_client = boto3.client('ssm')
+        # Inicializar los clientes de Secrets Manager y Parameter Store con la región especificada
+        secrets_client = boto3.client('secretsmanager', region_name=AWS_REGION)
+        ssm_client = boto3.client('ssm', region_name=AWS_REGION)
 
         # Recuperar las credenciales desde Secrets Manager
         secret_value_response = secrets_client.get_secret_value(SecretId=os.environ['SECRET_ID'])

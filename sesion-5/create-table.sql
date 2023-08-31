@@ -1,0 +1,4 @@
+CREATE TABLE timestamp_logs (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    timestamp DATETIME NOT NULL
+);

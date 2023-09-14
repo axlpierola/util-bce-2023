@@ -1,0 +1,16 @@
+{
+  "version": "0",
+  "id": "6a7e8feb-b491-4cf7-a9f1-bf3703467718",
+  "detail-type": "OrderPlaced",
+  "source": "ecommerce.app",
+  "account": "123456789012",
+  "time": "2023-09-13T20:38:34Z",
+  "region": "us-east-1",
+  "resources": [],
+  "detail": {
+    "orderId": "12345",
+    "product": "Laptop",
+    "quantity": 1,
+    "price": 1000
+  }
+}

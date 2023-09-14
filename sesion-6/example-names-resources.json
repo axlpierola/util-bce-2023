@@ -1,0 +1,7 @@
+name-bus: e-commerce-events
+rule-1: OrderPlaced
+rule-2: NotifyPlaced
+rule-3: NotifyApproved
+SQS: OrderProcessingQueue
+SNS: EmailNotifications
+Lambda: TriggerSQS

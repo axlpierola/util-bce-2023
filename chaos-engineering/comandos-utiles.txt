@@ -1,0 +1,2 @@
+# Conectar a la db por terminal UNIX
+mysql -u USER -h ENDPOINT -P PORT -p 
